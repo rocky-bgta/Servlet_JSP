@@ -9,4 +9,13 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>Ch3 Beer</servlet-name>
+      <servlet-class>com.example.web.BeerSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Ch3 Beer</servlet-name>
+      <url-pattern>/SelectBeer.do</url-pattern>
+  </servlet-mapping>
 </web-app>
