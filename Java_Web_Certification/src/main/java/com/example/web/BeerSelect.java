@@ -1,9 +1,7 @@
 package com.example.web;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,7 +39,7 @@ public class BeerSelect extends HttpServlet {
 		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 		view.forward(request, response);
 		
-	/*	Iterator<?> it = result.iterator();
+		/*Iterator<?> it = result.iterator();
 		while(it.hasNext()){
 			out.print("<br>try: " + it.next());
 		}*/
