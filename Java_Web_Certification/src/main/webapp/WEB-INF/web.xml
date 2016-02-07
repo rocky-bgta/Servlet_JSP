@@ -29,8 +29,8 @@
   </servlet-mapping>
   
   <context-param>
-  	<param-name>context</param-name>
-  	<param-value>Dog</param-value>
+  	<param-name>breed</param-name>
+  	<param-value>Great Dane</param-value>
   </context-param>
   
   <listener>

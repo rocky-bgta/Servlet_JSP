@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 
 import com.example.model.Dog;
 
-public class ContextListener implements ServletContextListener {
+public class ContextListener2 implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
