@@ -17,6 +17,10 @@
  <p>
  <%
  
+ 	Cookie cookie = new Cookie("username", "Rocky");
+ 	cookie.setMaxAge(30*60);
+ 	response.addCookie(cookie);
+ 	
  	HttpSession sess = request.getSession();
  	if(sess.isNew()){
  		out.println("This is a new session");
@@ -32,6 +36,8 @@
 	while(it.hasNext()){
 		out.print("<br>try: " + it.next());
 	}
+	
+	RequestDispatcher view = request.getRequestDispatcher("CookiesCheck.jsp");
 	
  %>
 
