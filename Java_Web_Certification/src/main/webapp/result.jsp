@@ -17,6 +17,13 @@
  <p>
  <%
  
+ 	HttpSession sess = request.getSession();
+ 	if(sess.isNew()){
+ 		out.println("This is a new session");
+ 	}
+ 	else{
+ 		out.println("Welcome back!");
+ 	}
  	Dog dog = (Dog) getServletContext().getAttribute("dog");
  	out.print("Dog breed is: " +dog.getBreed());
  	

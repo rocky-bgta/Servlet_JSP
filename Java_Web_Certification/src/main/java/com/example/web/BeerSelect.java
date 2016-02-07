@@ -35,6 +35,7 @@ public class BeerSelect extends HttpServlet {
 		BeerExpert be = new BeerExpert();
 		ArrayList<?> result =  be.getBrands(c);
 		
+		
 		request.setAttribute("styles", result);
 		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 		view.forward(request, response);
