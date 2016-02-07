@@ -15,7 +15,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Ch3 Beer</servlet-name>
-    <url-pattern>/SelectBeer.do</url-pattern>
+    <url-pattern>/Beer-v1/SelectBeer.do</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>Download</servlet-name>
@@ -23,16 +23,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Download</servlet-name>
-    <url-pattern>/download</url-pattern>
+    <url-pattern>/Beer-v1/download</url-pattern>
   </servlet-mapping>
    
   <servlet>
     <servlet-name>Cookie</servlet-name>
-    <servlet-class>com.cookies.CheckCookies</servlet-class>
+    <servlet-class>com.cookies.CreateCookies</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Cookie</servlet-name>
-    <url-pattern>/checkcookie.do</url-pattern>
+    <url-pattern>/Cookies/createCookies.do</url-pattern>
   </servlet-mapping>
   
   <context-param>

@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class StartCookies
  */
 @WebServlet("/StartCookies")
-public class StartCookies extends HttpServlet {
+public class CreateCookies extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public StartCookies() {
+    public CreateCookies() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,8 +40,9 @@ public class StartCookies extends HttpServlet {
 		response.setContentType("text/html");
 		String name = request.getParameter("username");
 		
-		Cookie cookie = new Cookie("username", name);
+		Cookie cookie = new Cookie("usernameFromCookie", "I am from Coookies!!!");
 		cookie.setMaxAge(30*60);
+		response.addCookie(cookie);
 		RequestDispatcher view = request.getRequestDispatcher("/Cookies/cookieresult.jsp");
 		view.forward(request, response);
 	}

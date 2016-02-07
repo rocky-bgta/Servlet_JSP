@@ -7,6 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href = "checkcookie.do">Click here</a>
+<%
+	String a = request.getParameter("username");
+	out.println("Here is the query parameter: " +a);
+	out.println("<br>");
+	Cookie[] cookies = request.getCookies();
+	if(cookies !=null){
+		for(int i = 0; i<cookies.length; i++){
+			Cookie cookie = cookies[i];
+			if(cookie.getName().equals("usernameFromCookie")){
+				String valueFromCookie = cookie.getValue();
+				out.println("Hello " + valueFromCookie);
+				break;
+			}
+		}
+	}
+
+%>
+	<br>
+	<a href = "../Beer-v1/form.html">Return to Main</a>
 </body>
 </html>

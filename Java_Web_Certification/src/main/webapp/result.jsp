@@ -37,9 +37,9 @@
 		out.print("<br>try: " + it.next());
 	}
 	
-	RequestDispatcher view = request.getRequestDispatcher("CookiesCheck.jsp");
 	
  %>
-
+	<br>
+	<a href = "./form.html">Return to Main</a>
 </body>
 </html>

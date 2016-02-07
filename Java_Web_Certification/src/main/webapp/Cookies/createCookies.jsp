@@ -7,9 +7,10 @@
 <title>Create Cookies</title>
 </head>
 <body>
-	<form action="createCookies.do" method="post">
-		<input type="text"><br>
+	<form action=createCookies.do method="post">
+		<input type="text" name="username"><br>
 		<input type="submit">
+		<a href="createCookies.do"></a>
 	</form>
 </body>
 </html>
