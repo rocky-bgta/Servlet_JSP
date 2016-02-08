@@ -1,6 +1,9 @@
 package com.example.model;
 
-public class Dog {
+import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.http.HttpSessionBindingListener;
+
+public class Dog implements HttpSessionBindingListener {
 	private String breed;
 	
 	public Dog(String breed){
@@ -13,6 +16,18 @@ public class Dog {
 
 	public void setBreed(String breed) {
 		this.breed = breed;
+	}
+
+	@Override
+	public void valueBound(HttpSessionBindingEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void valueUnbound(HttpSessionBindingEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

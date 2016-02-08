@@ -44,4 +44,16 @@
   		com.util.listener.ContextListener
   	</listener-class>
   </listener>
+  
+  <listener>
+    <listener-class>
+  		com.util.listener.BeerSessionCounter
+  	</listener-class>
+  </listener>
+  
+  <listener>
+    <listener-class>
+  		com.util.listener.BeerAttributeListener
+  	</listener-class>
+  </listener>
 </web-app>

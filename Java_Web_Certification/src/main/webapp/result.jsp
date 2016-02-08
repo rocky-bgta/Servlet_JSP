@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Session and Cookies</title>
 </head>
 <body>
 
@@ -23,10 +23,12 @@
  	
  	HttpSession sess = request.getSession();
  	if(sess.isNew()){
- 		out.println("This is a new session");
+ 		out.println("<bold>This is a new session</bold><br><br>");
  	}
  	else{
- 		out.println("Welcome back!");
+ 		out.println("<bold>Welcome back! to existing session</bold><br><br>");
+ 		//for test purpose we invalidate session
+ 		sess.invalidate();
  	}
  	Dog dog = (Dog) getServletContext().getAttribute("dog");
  	out.print("Dog breed is: " +dog.getBreed());
