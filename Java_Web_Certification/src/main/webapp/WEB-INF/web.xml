@@ -19,7 +19,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>Download</servlet-name>
-    <servlet-class>com.util.download.Download</servlet-class>
+    <servlet-class>com.util.Download</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Download</servlet-name>
@@ -41,19 +41,19 @@
   </context-param>
   <listener>
     <listener-class>
-  		com.util.listener.ContextListener
+  		com.listener.ContextListener
   	</listener-class>
   </listener>
   
   <listener>
     <listener-class>
-  		com.util.listener.BeerSessionCounter
+  		com.listener.BeerSessionCounter
   	</listener-class>
   </listener>
   
   <listener>
     <listener-class>
-  		com.util.listener.BeerAttributeListener
+  		com.listener.BeerAttributeListener
   	</listener-class>
   </listener>
 </web-app>

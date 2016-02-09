@@ -1,4 +1,4 @@
-package com.util.listener;
+package com.listener;
 
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
