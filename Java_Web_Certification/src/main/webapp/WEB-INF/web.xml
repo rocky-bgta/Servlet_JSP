@@ -23,7 +23,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Download</servlet-name>
-    <url-pattern>/Beer-v1/download</url-pattern>
+    <url-pattern>/download</url-pattern>
   </servlet-mapping>
    
   <servlet>
@@ -33,6 +33,19 @@
   <servlet-mapping>
     <servlet-name>Cookie</servlet-name>
     <url-pattern>/Cookies/createCookies.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyTestInit</servlet-name>
+  	<jsp-file>/test/MyTestInit.jsp</jsp-file>
+  	<init-param>
+  		<param-name>email</param-name>
+  		<param-value>rocky.bgta@gmail.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyTestInit</servlet-name>
+  	<url-pattern>/TestInif.jsp</url-pattern>
   </servlet-mapping>
   
   <context-param>
