@@ -48,6 +48,16 @@
   	<url-pattern>/TestInif.jsp</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>JSTL</servlet-name>
+  	<servlet-class>com.controller.EL_JSTL_Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JSTL</servlet-name>
+  	<url-pattern>/jstlRequest</url-pattern>
+  </servlet-mapping>
+  
+  
   <context-param>
     <param-name>breed</param-name>
     <param-value>Great Dane</param-value>
