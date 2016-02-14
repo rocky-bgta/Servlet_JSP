@@ -57,6 +57,16 @@
   	<url-pattern>/jstlRequest</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>Comment</servlet-name>
+  	<servlet-class>com.controller.Comment_Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Comment</servlet-name>
+  	<url-pattern>/Comments</url-pattern>
+  </servlet-mapping>
+  
+  
   
   <context-param>
     <param-name>breed</param-name>
