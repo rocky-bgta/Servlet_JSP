@@ -1,4 +1,4 @@
-package com.example.model;
+package com.util;
 
 public class DiceRoller {
 

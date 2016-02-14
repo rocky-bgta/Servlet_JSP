@@ -8,7 +8,7 @@
  <uri>DiceFunctions</uri>
  	<function>
  		<name>rollIt</name>
- 		<function-class>com.example.model.DiceRoller</function-class>
+ 		<function-class>com.util.DiceRoller</function-class>
  		<function-signature>
  			int rollDice();
  		</function-signature>
