@@ -4,7 +4,7 @@
  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
  
  <tlib-version>1.2</tlib-version>
- <short-name>rollIt</short-name>
+ <short-name>JustAname</short-name>
  
  <uri>randomThings</uri> 
  <tag>

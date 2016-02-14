@@ -5,16 +5,14 @@
  <tlib-version>1.0</tlib-version>
  <short-name>rollIt</short-name>
  
- <uri>DiceFunctions</uri>
+ <uri>DiceFunction</uri>
  	<function>
  		<name>rollIt</name>
  		<function-class>com.util.DiceRoller</function-class>
  		<function-signature>
- 			int rollDice();
+ 			int rollDice()
  		</function-signature>
  
  	</function>
- 
- 
- 
+
 </taglib>
