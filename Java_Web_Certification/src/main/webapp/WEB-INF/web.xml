@@ -95,4 +95,9 @@
   	<location>/errorPage.jsp</location>
   </error-page>
   
+  <context-param>
+  	<param-name>mainEmail</param-name>
+  	<param-value>what_a_jsp@gmail.com</param-value>
+  </context-param>
+  
 </web-app>
