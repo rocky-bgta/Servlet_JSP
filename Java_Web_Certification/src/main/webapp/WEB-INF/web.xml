@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>Java_Web_Certification</display-name>
   <welcome-file-list>
-    <welcome-file>Beer-v1/form.html</welcome-file>
+    <welcome-file>Beer-v1/form.jsp</welcome-file>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
@@ -15,7 +15,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Ch3 Beer</servlet-name>
-    <url-pattern>/Beer-v1/SelectBeer.do</url-pattern>
+    <url-pattern>/SelectBeer.do</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>Download</servlet-name>

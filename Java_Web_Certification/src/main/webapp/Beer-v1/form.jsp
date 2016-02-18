@@ -1,3 +1,5 @@
+<%@taglib prefix="formTags" uri="http://example.com/tags/forms" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +12,13 @@
  		Select beer charateristics<p>
  		
  		Color:
- 		<select name="color" size="1">
+ 		<formTags:select name="color" size="1" optionsList="${applicationScope.colorList}"/>
+ 		<!-- <select name="color" size="1">
  			<option>light
  			<option>amber
  			<option>brown
  			<option>dark
- 		</select>
+ 		</select> -->
  		<br><br>
  		<center>
  			<!-- <input type = "submit" title="Create Session and See Query parameter"> -->

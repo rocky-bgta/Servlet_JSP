@@ -13,7 +13,7 @@
 		<input name = "commentSubmit" type="button" value = "Add Comment">
 		
 		<br>
-		<a href = "/Java_Web_Certification/Beer-v1/form.html">Return to Main</a>
+		<a href = "/Java_Web_Certification/Beer-v1/form.jsp">Return to Main</a>
 	</form>
 </body>
 </html>
