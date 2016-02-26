@@ -1,1 +1,22 @@
-{"ide":{},"plugins":{"guess-types":{},"outline":{},"angular":{},"bootstrap":{}},"libs":["ecma5","browser","jquery"]}
+{
+  "ecmaVersion": 5,
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "angular": {
+      
+    },
+    "bootstrap": {
+      
+    }
+  },
+  "libs": [
+    "ecma5",
+    "browser",
+    "jquery"
+  ]
+}
