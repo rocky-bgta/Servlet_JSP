@@ -61,14 +61,22 @@
   	<servlet-name>Comment</servlet-name>
   	<servlet-class>com.controller.Comment_Controller</servlet-class>
   </servlet>
-  <servlet-mapping>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
   	<servlet-name>Comment</servlet-name>
   	<url-pattern>/Comments</url-pattern>
   </servlet-mapping>
-  
-  
-  
-  <context-param>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+
+    <context-param>
     <param-name>breed</param-name>
     <param-value>Great Dane</param-value>
   </context-param>
@@ -99,5 +107,9 @@
   	<param-name>mainEmail</param-name>
   	<param-value>what_a_jsp@gmail.com</param-value>
   </context-param>
-  
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/pom.xml</param-value>
+    </context-param>
+
 </web-app>
