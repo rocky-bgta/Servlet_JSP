@@ -1,1 +1,12 @@
 /build/
+/Servlet_JSP.iml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/
+.idea/misc.xml
+.idea/workspace.xml
+lib/
+/.idea/
+/.settings/
+target/classes/
+target/generated-sources/
