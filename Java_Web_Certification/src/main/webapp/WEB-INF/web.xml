@@ -3,6 +3,7 @@
   <display-name>Java_Web_Certification</display-name>
   <welcome-file-list>
     <welcome-file>Beer-v1/form.jsp</welcome-file>
+      
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>

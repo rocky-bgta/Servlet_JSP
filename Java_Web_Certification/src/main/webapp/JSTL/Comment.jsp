@@ -11,10 +11,10 @@
 <head>
 	<link href="./css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
 	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
-	<script type="text/javascript" src="./js/jquery-1.9.0.js"/>
+	<%--<script type="text/javascript" src="./js/jquery-1.9.0.js"/>
 	</script>
 	<script type="text/javascript" src="./js/bootstrap.js"/>
-	</script>
+	</script>--%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <body>
