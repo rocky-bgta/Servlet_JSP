@@ -15,14 +15,14 @@ public class BeerSessionCounter implements HttpSessionListener{
 		BeerSessionCounter.activeSessions = activeSessions;
 	}
 
-	@Override
+
 	public void sessionCreated(HttpSessionEvent arg0) {
 		// TODO Auto-generated method stub
 		activeSessions++;
 		
 	}
 
-	@Override
+
 	public void sessionDestroyed(HttpSessionEvent arg0) {
 		// TODO Auto-generated method stub
 		activeSessions--;

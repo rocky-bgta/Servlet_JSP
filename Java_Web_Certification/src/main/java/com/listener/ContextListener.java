@@ -13,7 +13,7 @@ public class ContextListener implements ServletContextListener {
 	
 	List<String> list = null;
 
-	@Override
+
 	public void contextInitialized(ServletContextEvent event) {
 		// TODO Auto-generated method stub
 		
@@ -36,7 +36,7 @@ public class ContextListener implements ServletContextListener {
 		
 	}
 
-	@Override
+
 	public void contextDestroyed(ServletContextEvent event) {
 		// TODO Auto-generated method stub
 		

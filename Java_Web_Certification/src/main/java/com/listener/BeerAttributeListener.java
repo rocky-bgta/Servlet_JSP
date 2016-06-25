@@ -13,7 +13,7 @@ public class BeerAttributeListener implements HttpSessionAttributeListener {
 		System.out.println("Attribute added: " + name + ": " + value);
 	}
 
-	@Override
+
 	public void attributeRemoved(HttpSessionBindingEvent event) {
 		String name = event.getName();
 		Object value = event.getValue();
@@ -21,7 +21,7 @@ public class BeerAttributeListener implements HttpSessionAttributeListener {
 		
 	}
 
-	@Override
+
 	public void attributeReplaced(HttpSessionBindingEvent event) {
 		String name = event.getName();
 		Object value = event.getValue();
