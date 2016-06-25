@@ -25,6 +25,6 @@
 
 %>
 	<br>
-	<a href = "/Java_Web_Certification/Beer-v1/form.jsp">Return to Main</a>
+	<a href = "/Java_Web_Certification">Return to Main</a>
 </body>
 </html>

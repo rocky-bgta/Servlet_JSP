@@ -13,6 +13,6 @@
 	<strong>Bummer.</strong><br>
 	You caused a ${pageContext.exception} on the Server.<br>
 	<img alt="" src="../images/error.jpg"><br>
-	<a href = "/Java_Web_Certification/Beer-v1/form.html">Return to Main</a>
+	<a href = "/Java_Web_Certification">Return to Main</a>
 </body>
 </html>
