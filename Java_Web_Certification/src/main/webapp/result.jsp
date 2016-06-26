@@ -42,6 +42,6 @@
 	
  %>
 	<br>
-	<a href = "./form.html">Return to Main</a>
+     <a href = "/Java_Web_Certification">Return to Main</a>
 </body>
 </html>
