@@ -107,7 +107,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>UpdateRecipes</web-resource-name>
-            <url-pattern>/Beer/AddRecipe/*</url-pattern>
+            <url-pattern>/*</url-pattern>
             <url-pattern>/Beer/ReviewRecipe/*</url-pattern>
 
             <http-method>GET</http-method>
