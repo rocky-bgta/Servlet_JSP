@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Java_Web_Certification</display-name>
+  <welcome-file-list>
+    <welcome-file>Beer-v1/form.jsp</welcome-file>
+      
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <servlet-class>com.example.web.BeerSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <url-pattern>/SelectBeer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>com.util.Download</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>Cookie</servlet-name>
+    <servlet-class>com.cookies.CreateCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cookie</servlet-name>
+    <url-pattern>/Cookies/createCookies.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyTestInit</servlet-name>
+  	<jsp-file>/test/MyTestInit.jsp</jsp-file>
+  	<init-param>
+  		<param-name>email</param-name>
+  		<param-value>rocky.bgta@gmail.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyTestInit</servlet-name>
+  	<url-pattern>/TestInif.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>JSTL</servlet-name>
+  	<servlet-class>com.controller.EL_JSTL_Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JSTL</servlet-name>
+  	<url-pattern>/jstlRequest</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Comment</servlet-name>
+  	<servlet-class>com.controller.Comment_Controller</servlet-class>
+  </servlet>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+  	<servlet-name>Comment</servlet-name>
+  	<url-pattern>/Comments</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+
+    <context-param>
+    <param-name>breed</param-name>
+    <param-value>Great Dane</param-value>
+  </context-param>
+  <listener>
+    <listener-class>
+  		com.listener.ContextListener
+  	</listener-class>
+  </listener>
+  
+  <listener>
+    <listener-class>
+  		com.listener.BeerSessionCounter
+  	</listener-class>
+  </listener>
+  
+  <listener>
+    <listener-class>
+  		com.listener.BeerAttributeListener
+  	</listener-class>
+  </listener>
+  
+  <error-page>
+  	<exception-type>java.lang.Throwable</exception-type>
+  	<location>/errorPage.jsp</location>
+  </error-page>
+  
+  <context-param>
+  	<param-name>mainEmail</param-name>
+  	<param-value>what_a_jsp@gmail.com</param-value>
+  </context-param>
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/pom.xml</param-value>
+    </context-param>
+
+</web-app>
